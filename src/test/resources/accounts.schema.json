@@ -28,12 +28,8 @@
       },
       "currency": {
         "type": "string",
-        "patternProperties": {
-          "USD": true,
-          "RUB": true,
-          "additionalProperties": false
+        "pattern": "^[R,U]{1}[U,S]{1}[B,D]{1}$"
         }
       }
     }
-  }
 }
