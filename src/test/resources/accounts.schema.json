@@ -28,8 +28,15 @@
       },
       "currency": {
         "type": "string",
-        "pattern": "^[R,U]{1}[U,S]{1}[B,D]{1}$"
+        "patternProperties": {
+          "^USD$": {
+            "type": "string"
+          },
+          "^RUB$": {
+            "type": "string"
+          }
         }
       }
     }
+  }
 }
